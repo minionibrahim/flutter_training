@@ -19,3 +19,22 @@ void main() {
     )),
   ));
 }
+---------------------------------------------------------
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.black,
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text("I Am Despicable "),
+          backgroundColor: Colors.blueGrey[900],
+          foregroundColor: Colors.white,
+        ),
+        body: Center(
+          child: Image(image: AssetImage('images/Minions_characters.png')),
+        ),
+      ),
+    ),
+  );
+}
