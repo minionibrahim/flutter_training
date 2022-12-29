@@ -38,3 +38,145 @@ void main() {
     ),
   );
 }
+
+
+---------------------------------------------------------------------------
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+      backgroundColor: Colors.black87,
+      appBar: AppBar(
+        backgroundColor: Colors.brown,
+        title: Text("I AM BACK"),
+        centerTitle: true,
+      ),
+      body: SafeArea(
+        child: Container(
+          color: Colors.blue,
+          height: 40.0,
+          width: 100.0,
+          padding: EdgeInsets.all(10.0),
+          margin: EdgeInsets.only(left: 20.0, top: 20.0),
+          child: Text("USERNAME"),
+        ),
+      ),
+    ));
+  }
+}
+
+
+
+======================================================
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+      backgroundColor: Colors.black87,
+      appBar: AppBar(
+        backgroundColor: Colors.brown,
+        title: Text("I AM BACK"),
+        centerTitle: true,
+      ),
+      body: SafeArea(
+          child: Column(
+        //verticalDirection: VerticalDirection.down,
+        //mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Container(
+            color: Colors.blue,
+            height: 100.0,
+            width: 100.0,
+            // padding: EdgeInsets.all(10.0),
+            // margin: EdgeInsets.only(left: 20.0, top: 20.0),
+            child: Text("Container1"),
+          ),
+          Container(
+            height: 100.0,
+            width: 100.0,
+            color: Colors.cyanAccent,
+            child: Text("Container2"),
+          )
+        ],
+      )),
+    ));
+  }
+}
+
+
+
+
+
+------------------------------------------------------------------------------------
+
+// import 'dart:collection';
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.white,
+        body: SafeArea(
+            child: Column(
+          children: const [
+            CircleAvatar(
+                radius: 100.0,
+                backgroundColor: Colors.white,
+                backgroundImage: AssetImage('images/Minions_characters.png')),
+            Text(
+              'Mohamed Ibrahim B',
+              style: TextStyle(
+                fontFamily: 'Pacifico',
+                fontWeight: FontWeight.bold,
+                fontSize: 40.0,
+                color: Colors.indigo,
+              ),
+            ),
+            Text(
+              'FLUTTER DEVELOPER',
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                fontWeight: FontWeight.bold,
+                color: Colors.black87,
+                fontSize: 15.0,
+                letterSpacing: 2.0,
+              ),
+            )
+          ],
+        )),
+      ),
+    );
+  }
+}
+
+

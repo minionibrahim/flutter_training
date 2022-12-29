@@ -1,0 +1,10 @@
+MaterialApp
+MaterialApp-scaffold(appbar(AppBar)-body[Column->Children(container)])
+padding: EdgeInsets.all
+margin: EdgeInsets.all
+stless -> stateless
+verticalDirection: VerticalDirection.down,
+mainAxisAlignment: MainAxisAlignment.start,
+crossAxisAlignment: CrossAxisAlignment.stretch
+SafeArea
+CircleAvatar
